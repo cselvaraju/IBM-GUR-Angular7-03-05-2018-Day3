@@ -1,0 +1,13 @@
+<div>
+  <h3>Asynchronous Actor List Demo</h3>
+  <ul *ngIf="actorlist">
+    <li *ngFor="let actor of actorlist">
+      Name: {{ actor.name }}
+      City: {{ actor.city }}
+    </li>
+  </ul>
+  <div *ngIf="!actorlist">
+    <h5>Loading Please wait...</h5>
+    <img src="/assets/loading.gif">
+  </div>
+</div>

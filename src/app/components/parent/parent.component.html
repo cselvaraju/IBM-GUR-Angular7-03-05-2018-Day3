@@ -1,0 +1,14 @@
+<div>
+  <h3>Parent Component</h3>
+  Enter a value: 
+  <input type="text" [(ngModel)]="value" />
+  &nbsp;
+  <button (click)="sendData()">Send Data</button>
+  <p></p>
+  Child component favourite country is: {{ favCountry }}
+
+  <app-child 
+    childData="{{ dataForChild }}"
+    (dataEvent)="getData($event)">
+  </app-child>
+</div>

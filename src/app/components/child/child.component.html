@@ -1,0 +1,10 @@
+<div>
+  <h3>Child Component</h3>
+  Data received from parent: 
+  {{ childData || 'No data yet' }}
+  <p></p>
+  Favourite Country: 
+  <input type="text" [(ngModel)]="favCountry" />
+  &nbsp;
+  <button (click)="sendData2Parent()">Send to Parent</button>
+</div>
